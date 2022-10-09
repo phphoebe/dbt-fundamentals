@@ -1,6 +1,6 @@
-select 
-    id as customer_id,
-    first_name,
-    last_name
+SELECT
+    id           AS customer_id,
+    first_name   AS first_name,
+    last_name    AS last_name
     
-from {{ source('jaffle_shop', 'customers') }}
+FROM {{ source('jaffle_shop', 'customers') }}
