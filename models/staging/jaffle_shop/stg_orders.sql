@@ -1,7 +1,6 @@
-SELECT
-    id           AS order_id,
-    user_id      AS customer_id,
-    order_date   AS order_date,
-    status       AS status
-
-FROM {{ source('jaffle_shop', 'orders')}}
+select
+    id            as order_id
+    , user_id     as customer_id
+    , order_date  as order_date
+    , status      as status
+from {{ source('jaffle_shop', 'orders')}}
